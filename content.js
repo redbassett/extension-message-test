@@ -1,7 +1,7 @@
 "use strict";
 
 let listenerScript = document.createElement('script');
-listenerScript.textContent = "window.addEventListener('instagramProcessEvent',function(ev){console.log('New event: ' + ev);},false);console.log('installed');";
+listenerScript.textContent = "window.addEventListener('message',function(ev){console.log('New event: ' + ev);},false);console.log('installed');";
 (document.head||document.documentElement).appendChild(listenerScript);
 listenerScript.remove();
 
