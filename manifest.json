@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Message Test",
+    "version": "0.1",
+    "description": "Testing Messages",
+    "author": "RedBassett",
+    
+    "content_scripts": [
+        {
+            "matches": ["http://*/*","https://*/*"],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    
+    "permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
